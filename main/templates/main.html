@@ -38,6 +38,12 @@
 <br />
 
 <a href="{% url 'main:create_mood_entry' %}">
-  <button>Add New Mood Entry</button>
+
+<a href="{% url 'main:logout' %}">
+  <h5>Sesi terakhir login: {{ last_login }}</h5>
 </a>
+  <button>Add New Mood Entry</button>
+  </a><button>Logout</button>
+  
+
 {% endblock content %}
